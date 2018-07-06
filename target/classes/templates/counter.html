@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" th:src="@{/js/jquery-3.3.1.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/myscript.js}" ></script>
+    <link th:href="@{/css/mycss.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h3 th:align="center">Counter page</h3>
+    <p>
+    <!--显示当前取得的数值 -->
+    <div  id="display">
+    </div><br/>
+
+    <!--显示错误消息-->
+    <div id="error">
+    </div><br/>
+
+    <!--显示指示灯-->
+    <div id="light"  th:align="center" >
+    </div><br/>
+
+    <!--显示视频-->
+    <div id="video"   th:align="center">
+        <!--<img id="ImageGreen"  th:src="@{/image/green.png}"  th:width="50" th:height="50"  >
+        <img id="ImageRed"  th:src="@{/image/red.png}"  th:width="50" th:height="50" >
+        <img id="ImageYellow"  th:src="@{/image/yellow.png}"  th:width="50" th:height="50" ><p/>-->
+        <video th:src="@{/video/v1.mp4}" th:controls="controls" th:width="500" th:height="400"/>
+    </div>
+
+</body>
+</html>
+<script>
+    setInterval('sendAjax()', 1000);//显示时间
+</script>

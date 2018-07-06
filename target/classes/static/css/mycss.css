@@ -1,0 +1,26 @@
+#display{
+    color: #895c88;
+    size: 15px;
+    text-align: center;
+    /*height: 30px;*/
+}
+
+#error{
+    color: #895c88;
+    size: 15px;
+    text-align: center;
+    /*height: 30px;*/
+}
+
+/*
+#ImageGreen{
+    display: none;
+}
+
+#ImageRed{
+    display: none;
+}
+
+#ImageYellow{
+    display: none;
+}*/
